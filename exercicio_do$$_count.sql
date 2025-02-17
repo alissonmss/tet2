@@ -7,3 +7,12 @@ begin
 	raise notice 'O número de clientes é %.',
 	n;
 end $$;
+
+--- resposta (incompleto)
+
+do $$
+declare
+	v_id_cliente int;
+	v_nome varchar(20);
+begin
+	select max(id_cliente) into v_id_cliente from clientes;
