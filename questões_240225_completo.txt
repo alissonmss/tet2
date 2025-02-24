@@ -1,0 +1,47 @@
+Livro de Princípios de Lógica de Programação, p. 53 a 55
+
+1) Utilizando a estrutura condicional simples, verifique se um número é par e, caso seja, escreva na tela "o número é par".
+
+2) Utilizando a estrutura condicional simples, verifique se um número é ímpar e, caso seja, escreva na tela "o número é ímpar".
+
+3) Utilizando a estrutura condicional composta, verifique se um número é par ou ímpar e escreva na tela a mensagem correspondente, conforme os exercícios 1 e 2.
+
+4) Em uma escola, as notas de cada prova variam de 0 até 100. Para o cálculo da média do semestre, o aluno precisa fazer três provas. Fazer um programa que solicite o valor de cada prova, calcule a média aritmética delas e mostre se ele foi aprovado ou reprovado. Para ser aprovado, a média deve ser igual ou maior do que 50.
+Média = (Prova1 + Prova2 + Prova3) / 3
+
+5) Escrever um programa que teste se a senha informada  é igual a "AC12". Se sim, exibir a mensagem "Senha correta" e, se não, exibir "Senha errada".
+
+6) Solicitar ao usuário um número inteiro e exibir o mês correspondente a este número, sendo o número 1 o mês de janeiro e 12, o mês de dezembro. Para valores fora da faixa entre 1 e 12, o programa deve informar que não é um mês válido.
+
+7) Uma livraria está fazendo uma promoção para pagamento à vista em que o comprador pode escolher entre dois critérios de desconto:
+a) Critério A: R$ 0,25 por livro + R$ 7, 50 fixo
+b) Critério B: R$ 0,50 por livro + R$ 2, 50 fixo
+
+Fazer um programa em que o usuário digite a quantidade de livros que deseja comprar e o programa diga qual é a melhor opção de desconto.
+
+8) Considerar a situação em que um cliente faz uma determinada compra em uma loja. Ao realizar o pagamento, são oferecidas as seguintes condições para o pagamento:
+• Pagamento à vista: 15% de desconto sobre o valor total da compra.
+• Pagamento com cheque pré-datado para 30 dias: 10% de desconto sobre o valor total da compra.
+• Pagamento parcelado em 3 vezes: 5% de desconto sobre o valor total da compra.
+• Pagamento parcelado em 6 vezes: não tem desconto.
+• Pagamento parcelado em 12 vezes: 8% de acréscimo sobre o valor total da compra.
+
+De acordo com o valor total da compra, verificar a opção de pagamento do cliente, calcular o valor final da compra e, se a escolha for pagamento parcelado, calcular também o valor das parcelas. Apresentar ao usuário uma mensagem com o valor total da compra, o valor final da compra, a adiferença entre os dois, identificar como desconto se a diferença for positiva, como juros se for negativa, mostrar, também, a quantidade e o valor das parcelas.
+
+9) Dados seis números inteiros representando dois intervalos de tempo (hora, minutos e seguntos), fazer um programa para calcular a soma desses intervalors.
+
+10) Elaborar um programa que verifique se o paciente está acima de seu peso ideal de acordo com a condição a seguir:
+• Para homens (72.7 * altura) - 58.
+• Para mulheres (62.1 * altura) - 44.7.
+
+11) Escrever um programa que resolva o seguinte problema: uma fotocópia custa R$ 0,25 por folha, mas acima de 100 folhas esse valor cai para R$ 0,20 por unidade. Dado o total de cópias, informe o valor a ser pago.
+
+12) Escrever um programa que informe a categoria de um jogador de futebol, considerando sua idade:
+• Infantil: até 13 anos.
+• Juvenil: até 17 anos.
+• Sênior: acima de 17 anos.
+
+13) Escrever um programa que solicite a idade do usuário e exiba sua condição eleitoral:
+• Entre 16 e 17 anos: voto opcional.
+• Entre 18 e 70 anos: voto obrigatório.
+• Acima de 70 anos: voto opcional.
