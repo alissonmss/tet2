@@ -4,7 +4,7 @@ do $$
 		mes varchar;
 	begin
 		mesnum := 12;
-		mes := mesnum ||
+		mes :=
 		case mesnum
 			when 1 then 'janeiro'
 			when 2 then 'fevereiro'

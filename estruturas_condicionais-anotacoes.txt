@@ -1,0 +1,14 @@
+1) substituir todos "numero := numero - "dezena"" por "numero := numero % 10".
++
+if numero > 0 then
+extenso := extenso || 'e';
+end if;
+
+3) em vez de elsif, apenas else.
+
+7) pode simplicar trocando o elsif por else (pois saem o mesmo valor)
+
+
+DUVIDAS
+
+diferença entre 'end'; e 'end case;'

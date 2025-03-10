@@ -14,9 +14,7 @@ do $$
 
 		if (livros * livroA) + fixoA > (livros * livroB) + fixoB then
 			raise notice 'Melhor opção: A';
-		elsif (livros * livroA) + fixoA < (livros * livroB) + fixoB then
-			raise notice 'Melhor opção: B';
 		else
-			raise notice 'Melhor opção: A ou B saem pelo mesmo valor';
+			raise notice 'Melhor opção: B';
 		end if;
 end $$;
