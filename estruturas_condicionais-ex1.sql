@@ -3,59 +3,35 @@ do $$
 		numero integer;
 		extenso varchar;
 	begin
-		numero := 55;
+		numero := 21;
 		extenso := '';
 		case
 			when numero between 20 and 29 then
 				extenso := 'vinte';
-				numero := numero % 10;
-				if numero > 0 then
-					extenso := extenso || ' e ';
-				end if;
 			when numero between 30 and 39 then
 				extenso := 'trinta';
-				numero := numero % 10;
-				if numero > 0 then
-					extenso := extenso || ' e ';
-				end if;
 			when numero between 40 and 49 then
 				extenso := 'quarenta';
-				numero := numero % 10;
-				if numero > 0 then
-					extenso := extenso || ' e ';
-				end if;
 			when numero between 50 and 59 then
 				extenso := 'cinquenta';
-				numero := numero % 10;
-				if numero > 0 then
-					extenso := extenso || ' e ';
-				end if;
 			when numero between 60 and 69 then
 				extenso := 'sessenta';
-				numero := numero % 10;
-				if numero > 0 then
-					extenso := extenso || ' e ';
-				end if;
 			when numero between 70 and 79 then
 				extenso := 'setenta';
-				numero := numero % 10;
-				if numero > 0 then
-					extenso := extenso || ' e ';
-				end if;
 			when numero between 80 and 89 then
 				extenso := 'oitenta';
-				numero := numero % 10;
-				if numero > 0 then
-					extenso := extenso || ' e ';
-				end if;
 			when numero between 90 and 99 then
 				extenso := 'noventa';
-				numero := numero % 10;
-				if numero > 0 then
-					extenso := extenso || ' e ';
-				end if;
 			else
 		end case;
+		
+		if numero >= 20 and numero <= 99 then 
+			numero := numero % 10;
+			if numero > 0 then
+				extenso := extenso || ' e ';
+			end if;
+		end if;
+
 		extenso := extenso ||
 		case numero
 			when 0 then 'zero'
