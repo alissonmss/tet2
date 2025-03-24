@@ -1,0 +1,27 @@
+do $$
+	declare
+		r record;
+	
+	begin
+		-- cabeçalho
+		raise notice '----------------------------------------------';
+		raise notice '|            TABELA            |   COMANDO   |';
+		raise notice '----------------------------------------------';
+		
+		
+		-- registros
+		for r in
+			select 
+				format('%-28s', table_name) as tabela,
+				format('%-11s', privilege_type) as privilegio
+				
+			from information_schema.role_table_grants
+			where table_schema = 'public' and is_grantable = 'YES'  and grantee = 'disciplinas'
+			order by grantee
+			limit 50
+			
+		loop
+			raise notice '| % | % |', r.tabela, r.privilegio;
+		end loop;
+	
+end $$;
