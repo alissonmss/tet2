@@ -1,10 +1,16 @@
 do $$
 declare
 	r record;
+	n int;
 begin
+	n := 0;
+	
+	-- cabeçalho
 	raise notice '-------------------------------------------------';
 	raise notice '|  ID  |         TÍTULO          | FAIXA ETÁRIA |';
 	raise notice '-------------------------------------------------';
+
+	-- registros
 	for r in
 		select 
 			format('%-4s', id_objeto) as id_objeto,
@@ -15,10 +21,9 @@ begin
 	loop
 		raise notice '| % | % | % |', r.id_objeto, r.titulo, r.faixa_etaria;
 		raise notice '-------------------------------------------------';
+		n := n + 1;
 	end loop;
-		/*select
-			id_objeto, count(*) as quantidade
-			from public.objetos
-			group by id_objeto;*/
-		raise notice 'Total de registros impressos: %', count(r.id_objeto) group by (r.id_objeto);
+
+	-- rodapé
+	raise notice 'Total de registros impressos: %', n;
 end $$;
